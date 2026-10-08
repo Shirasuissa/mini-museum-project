@@ -1,0 +1,86 @@
+h1 {
+    color: darkblue;
+    font-size: 36px;
+}
+
+h2 {
+    color: darkcyan;
+    font-size: 28px;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.artist-card {
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+.thumbnail {
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+#welcome-message {
+    font-size: 20px;
+}
+
+#vangogh h2 {
+    color: darkblue;
+}
+
+#monet h2 {
+    color: darkgreen;
+}
+
+#rembrandt h2 {
+    color: darkred;
+}
+
+header nav a {
+    color: darkred;
+}
+
+main article h2 {
+    font-size: 24px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+.artist-title {
+    color: red;
+}
+
+[id^="popup"] {
+    display: none;
+}
+
+[id^="popup"]:target {
+    display: block;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+[id^="popup"] img {
+    width: 500px;
+}
+
+/* Specificity:
+ h2 = 0,0,1
+ .artist-title = 0,1,0
+ #vangogh h2 = 1,0,1
+
+ .artist-title wins over h2 because a class selector
+ has higher specificity than a type selector.
+ */
